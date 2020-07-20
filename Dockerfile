@@ -16,6 +16,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
     libpython2-dev \
     libprotobuf-dev \
     protobuf-compiler \
+    libjq-dev \
 # Clean out cache
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* 
