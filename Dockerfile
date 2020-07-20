@@ -13,7 +13,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
     apt-get install -y \
     gdal-bin \
     aria2 \
-    libpython2-dev && \
+    libpython2-dev \
 # Clean out cache
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* 
