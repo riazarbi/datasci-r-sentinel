@@ -14,6 +14,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
     gdal-bin \
     aria2 \
     libpython2-dev \
+    libprotobuf-dev \
 # Clean out cache
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* 
