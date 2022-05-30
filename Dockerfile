@@ -25,7 +25,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
 
 RUN R -e "install.packages('janitor')"
 
-RUN R -e "remotes::install_github('ranghetti/sen2r', ref = 'master', dependencies = TRUE)"
+RUN R -e "remotes::install_github('ranghetti/sen2r', ref = 'main', dependencies = TRUE)"
 
 # Configure sen2r
 RUN mkdir /sen2cor_280 \
