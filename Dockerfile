@@ -23,6 +23,8 @@ RUN DEBIAN_FRONTEND=noninteractive \
 
 # NOT IN CRAN ================
 
+RUN R -e "install.packages('janitor')"
+
 RUN R -e "remotes::install_github('ranghetti/sen2r', ref = 'master', dependencies = TRUE)"
 
 # Configure sen2r
